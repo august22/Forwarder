@@ -14,9 +14,11 @@ __Version__ = "1.2.4"
 __Author__ = "cdhigh <https://github.com/cdhigh>"
 
 from wsgiref.util import is_hop_by_hop
-import os, urllib, urllib2, socket, bottle
+import os, urllib, urllib2, socket, bottle, ssl
 
-ALLOW_KEYS = 'xzSlE'
+ssl._create_default_https_context = ssl._create_unverified_context
+
+ALLOW_KEYS = 'wpqLvw2Ntc'
 
 application = app = bottle.Bottle()
 
